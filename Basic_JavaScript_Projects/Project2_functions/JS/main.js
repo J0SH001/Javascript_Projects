@@ -5,7 +5,7 @@ function My_First_Function() {  //This is the name of our function
     document.getElementById("Button_Text").innerHTML = str; //This one cunfuses me a bit, I think it targets the ID that the function is applied to
 }
 
-function GoFurself() {
+function Greeting() {
     var F = 'Hello';
     document.getElementById("Hi!").innerHTML = F;
 }
