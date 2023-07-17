@@ -6,6 +6,6 @@ function My_First_Function() {  //This is the name of our function
 }
 
 function GoFurself() {
-    var F = 'F urself';
+    var F = 'Hello';
     document.getElementById("Hi!").innerHTML = F;
 }
