@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <script src="JS/main.js"></script> <!--Links to our JavaScript page-->
+    </head>
+    <body>
+        <p id="Loop"></p> <!--These are all the HTML locations for our functions-->
+        <button onclick="Call_Loop()">Click here to execute the loop.</button>
+        <p>How many characters are in the phrase "Hello World!"?</p>
+        <p id="Larry"></p>
+        <script>
+        document.getElementById("Larry").innerHTML = "Hello World!".length;
+        </script>
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here.</button>
+        <p id="Cat"></p>
+        <button onclick="cat_pics()">Don't touch me!</button>
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Click here!</button>
+        <p id="math"></p>
+        <script>
+        document.getElementById("math").innerHTML = myFunction("John");
+
+        function myFunction(name) {
+        return "Hello " + name;
+        }
+        </script>
+        <p id="Car_Object"></p>
+        <p id="hello?" onclick="breaky()">Click here for a break example</p>
+        <p id="hello??" onclick="continuey()">Click here for a continue example</p>
+    </body>
+</html>
