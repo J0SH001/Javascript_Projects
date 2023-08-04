@@ -85,7 +85,7 @@ function Calculator_Reset() {
 function Update_Display() {
     //Makes use of the calculator-screen to target the
     //input tag in the HTML document
-    const display = document.querySelector('.calculator_screen');
+    const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
 
@@ -100,18 +100,18 @@ keys.addEventListener('click', (event) => {
     if (!target.matches('button')){
         return;
     }
-    if (target.classlist.contains('operator')){
+    if (target.classList.contains('operator')){
         Handle_Operator(target.value);
         Update_Display();
         return
     }
-    if (target.classlist.contains('decimal')){
+    if (target.classList.contains('decimal')){
         Input_Decimal(target.value);
         Update_Display();
         return;
     }
     //Ensures that AC clears all inputs from the Calculator screen.
-    if (target.classlist.contains('all-clear')){
+    if (target.classList.contains('all-clear')){
         Calculator_Reset();
         Update_Display();
         return;
