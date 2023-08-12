@@ -119,3 +119,8 @@ keys.addEventListener('click', (event) => {
     Input_Digit(target.value);
     Update_Display();
 })
+
+document.body.classList.add('fade-out');
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});

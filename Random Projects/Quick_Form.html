@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Example</title>
+    </head>
+    <body>
+        <form id="names" onsubmit="return validateForm()">
+            <input type="text" placeholder="First Name" id="fn">
+            <input type="text" placeholder="Last Name" id="ln">
+            <input type="submit" value="Submit">
+        </form>
+        <style>
+            #names {
+                width: 200px;
+                height: 200px;
+                background: cyan;
+                position: relative;
+                animation: mymove 10s infinite;
+            }
+
+            @keyframes mymove {
+                from {top: 300px;}
+                to {top: 50px;}
+            }
+        </style>
+
+        <script>
+            function validateForm() {
+                let x = document.forms["names"]["fn"].value;
+                if (x == "") {
+                    alert("You have to fill out both sections");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

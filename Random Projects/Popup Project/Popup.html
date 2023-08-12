@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Popup Example</title>
+        <link rel="stylesheet" type="text/css" href="Popup.css">
+        <script src="Popup.js"></script>
+    </head>
+    <body>
+        <!--A button to open the popup form-->
+        <button class="popup" onclick="openform()">Open Form</button>
+        <hr>
+
+        <!--The form-->
+        <div class="form-popup" id="myform">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required><br>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <img src="C:\Users\Josh\Documents\GitHub\Javascript_Projects\TicTacToe\images\o.png" id="o">
+    </body>
+</html>

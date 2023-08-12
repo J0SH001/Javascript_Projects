@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Procrastination List</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Todo.css">
+    </head>
+    <body>
+        <p id="my_dog"></p>
+
+        <script>
+            /*set the data as a key/value pair to be saved locally in your browser*/
+            localStorage.setItem("Name", "Dax");
+            /*then use the key "Name"to return its value "Dax"*/
+            document.getElementById("my_dog").innerHTML = localstorage.getItem("Name");
+        </script>
+    </body>
+</html>
